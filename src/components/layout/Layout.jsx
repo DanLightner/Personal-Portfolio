@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 
 function Layout() {
   return (
-    <div>
+    <div className="min-h-screen golf-pattern">
       <Navbar />
-      <main>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Outlet />
       </main>
     </div>
