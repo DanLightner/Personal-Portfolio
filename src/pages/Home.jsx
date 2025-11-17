@@ -2,25 +2,25 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-3xl">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-golf-green-400 pixel-border p-8 bg-opacity-80">
-        <h1 className="text-3xl md:text-4xl mb-4 text-golf-green-900">
+      <section className="hero">
+        <h1 className="text-3xl text-md-4xl">
           Daniel Lightner
         </h1>
-        <p className="text-xl md:text-2xl text-golf-green-800 mb-8">
+        <p className="text-xl text-md-2xl">
           Application Analyst Intern @ Geisinger | Computer Science
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="hero-actions">
           <Link 
             to="/about"
-            className="pixel-button bg-golf-green-600 text-golf-white px-6 py-3"
+            className="btn btn-primary"
           >
             Learn More About Me
           </Link>
           <Link 
             to="/contact"
-            className="pixel-button bg-golf-sky-500 text-golf-white px-6 py-3"
+            className="btn btn-secondary"
           >
             Get In Touch
           </Link>
@@ -28,60 +28,60 @@ function Home() {
       </section>
 
       {/* Projects Section */}
-      <section>
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl md:text-3xl text-golf-green-900">Featured Projects</h2>
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title text-2xl text-md-3xl">Featured Projects</h2>
           <Link 
             to="/projects"
-            className="text-golf-green-700 hover:text-golf-green-900 underline text-lg"
+            className="section-link"
           >
             View All Projects →
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="pixel-card bg-golf-white p-6 hover:shadow-pixel-lg transition-all">
-            <div className="bg-golf-green-200 p-4 mb-4 text-center">
-              <span className="text-golf-green-800 font-bold">Desktop Application</span>
+        <div className="grid grid-cols-1 grid-cols-md-2 gap-lg">
+          <div className="card">
+            <div className="bg-green-200 p-md mb-md text-center">
+              <span className="text-green-800 font-bold">Desktop Application</span>
             </div>
-            <h3 className="text-xl text-golf-green-900 mb-2">SFU PA Program</h3>
-            <p className="text-golf-brown-600 font-bold text-sm mb-3">Full-Stack Desktop Application · Jan 2025 - May 2025</p>
-            <p className="text-golf-green-800 mb-4">
+            <h3 className="text-xl text-green-900 mb-sm">SFU PA Program</h3>
+            <p className="text-brown-600 font-bold text-sm mb-md">Full-Stack Desktop Application · Jan 2025 - May 2025</p>
+            <p className="text-green-800 mb-md">
               A desktop application built for the Physician Assistant department at Saint Francis University to help manage and streamline the accreditation process. Led a team of 6 developers through Agile full-stack development, writing 9,000+ lines of code.
             </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">Java</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">Spring Boot</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">JavaFX</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">SQLite</span>
+            <div className="flex flex-wrap gap-sm mb-md">
+              <span className="badge">Java</span>
+              <span className="badge">Spring Boot</span>
+              <span className="badge">JavaFX</span>
+              <span className="badge">SQLite</span>
             </div>
             <a 
               href="https://github.com/DanLightner/SFU-PA-Project"
               target="_blank"
               rel="noopener noreferrer"
-              className="pixel-button bg-golf-sky-500 text-golf-white px-4 py-2 text-sm inline-block"
+              className="btn btn-secondary btn-sm"
             >
               View on GitHub
             </a>
           </div>
           
-          <div className="pixel-card bg-golf-white p-6 hover:shadow-pixel-lg transition-all">
-            <div className="bg-golf-green-200 p-4 mb-4 text-center">
-              <span className="text-golf-green-800 font-bold">Data Analysis Project</span>
+          <div className="card">
+            <div className="bg-green-200 p-md mb-md text-center">
+              <span className="text-green-800 font-bold">Data Analysis Project</span>
             </div>
-            <h3 className="text-xl text-golf-green-900 mb-2">College Basketball EDA</h3>
-            <p className="text-golf-brown-600 font-bold text-sm mb-3">Data Science & Machine Learning · Nov 2024 - May 2025</p>
-            <p className="text-golf-green-800 mb-4">
+            <h3 className="text-xl text-green-900 mb-sm">College Basketball EDA</h3>
+            <p className="text-brown-600 font-bold text-sm mb-md">Data Science & Machine Learning · Nov 2024 - May 2025</p>
+            <p className="text-green-800 mb-md">
               Explored a dataset of 3,500+ NCAA Division I basketball team seasons, applying K-means clustering and decision tree classifiers to predict conference affiliation, achieving 9.56% accuracy (vs. 3% baseline).
             </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">Python</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">pandas</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">Scikit-learn</span>
-              <span className="px-2 py-1 bg-golf-green-200 text-golf-green-900 border-2 border-golf-green-700 text-xs">Matplotlib</span>
+            <div className="flex flex-wrap gap-sm mb-md">
+              <span className="badge">Python</span>
+              <span className="badge">pandas</span>
+              <span className="badge">Scikit-learn</span>
+              <span className="badge">Matplotlib</span>
             </div>
             <Link 
               to="/projects"
-              className="pixel-button bg-golf-green-600 text-golf-white px-4 py-2 text-sm inline-block"
+              className="btn btn-primary btn-sm"
             >
               Learn More
             </Link>
@@ -90,65 +90,67 @@ function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="bg-golf-brown-200 pixel-border p-8">
-        <h2 className="text-2xl md:text-3xl mb-8 text-golf-brown-900 text-center">Skills</h2>
-        <div className="flex flex-wrap justify-center gap-3">
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">Java</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">Python</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">JavaScript</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">SQL</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">Spring Boot</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">React</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">Tableau</span>
-          <span className="px-4 py-2 bg-golf-white text-golf-green-900 border-2 border-golf-green-700 text-lg">Git</span>
+      <section className="section">
+        <div className="card bg-brown-200">
+          <h2 className="text-2xl text-md-3xl mb-xl text-brown-900 text-center">Skills</h2>
+          <div className="flex flex-wrap justify-center gap-md">
+            <span className="badge badge-lg">Java</span>
+            <span className="badge badge-lg">Python</span>
+            <span className="badge badge-lg">JavaScript</span>
+            <span className="badge badge-lg">SQL</span>
+            <span className="badge badge-lg">Spring Boot</span>
+            <span className="badge badge-lg">React</span>
+            <span className="badge badge-lg">Tableau</span>
+            <span className="badge badge-lg">Git</span>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section>
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl md:text-3xl text-golf-green-900">Get In Touch</h2>
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title text-2xl text-md-3xl">Get In Touch</h2>
           <Link 
             to="/contact"
-            className="text-golf-green-700 hover:text-golf-green-900 underline text-lg"
+            className="section-link"
           >
             View Full Contact →
           </Link>
         </div>
-        <div className="pixel-card bg-golf-white p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div className="card">
+          <div className="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-4 gap-lg mb-lg">
             <div className="text-center">
-              <h3 className="text-lg text-golf-green-900 mb-2 font-bold">Email</h3>
-              <a href="mailto:DRL400@francis.edu" className="text-golf-green-800 hover:text-golf-green-900 underline">
+              <h3 className="text-lg text-green-900 mb-sm font-bold">Email</h3>
+              <a href="mailto:DRL400@francis.edu" className="text-green-800">
                 DRL400@francis.edu
               </a>
             </div>
             <div className="text-center">
-              <h3 className="text-lg text-golf-green-900 mb-2 font-bold">Phone</h3>
-              <a href="tel:8142542776" className="text-golf-green-800 hover:text-golf-green-900 underline">
+              <h3 className="text-lg text-green-900 mb-sm font-bold">Phone</h3>
+              <a href="tel:8142542776" className="text-green-800">
                 (814) 254-2776
               </a>
             </div>
             <div className="text-center">
-              <h3 className="text-lg text-golf-green-900 mb-2 font-bold">LinkedIn</h3>
-              <a href="https://linkedin.com/in/daniel-lightner/" target="_blank" rel="noopener noreferrer" className="text-golf-green-800 hover:text-golf-green-900 underline">
+              <h3 className="text-lg text-green-900 mb-sm font-bold">LinkedIn</h3>
+              <a href="https://linkedin.com/in/daniel-lightner/" target="_blank" rel="noopener noreferrer" className="text-green-800">
                 Connect
               </a>
             </div>
             <div className="text-center">
-              <h3 className="text-lg text-golf-green-900 mb-2 font-bold">GitHub</h3>
-              <a href="https://github.com/DanLightner" target="_blank" rel="noopener noreferrer" className="text-golf-green-800 hover:text-golf-green-900 underline">
+              <h3 className="text-lg text-green-900 mb-sm font-bold">GitHub</h3>
+              <a href="https://github.com/DanLightner" target="_blank" rel="noopener noreferrer" className="text-green-800">
                 View Profile
               </a>
             </div>
           </div>
-          <div className="text-center pt-4 border-t-2 border-golf-green-200">
-            <p className="text-golf-green-800 mb-4">
+          <div className="text-center pt-lg border-t-2">
+            <p className="text-green-800 mb-md">
               Interested in working together? Feel free to reach out!
             </p>
             <Link 
               to="/contact"
-              className="pixel-button bg-golf-green-600 text-golf-white px-6 py-3 inline-block"
+              className="btn btn-primary"
             >
               Send a Message
             </Link>
@@ -160,4 +162,3 @@ function Home() {
 }
 
 export default Home
-
