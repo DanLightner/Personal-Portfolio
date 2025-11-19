@@ -6,7 +6,7 @@ function Contact() {
       {/* Contact Information */}
       <section className="card">
         <h2 className="text-2xl text-md-3xl mb-xl text-green-900 text-center">Get In Touch</h2>
-        <div className="grid grid-cols-1 grid-cols-md-2 grid-cols-lg-3 gap-lg">
+        <div className="contact-grid">
           <div className="card bg-green-100">
             <h3 className="text-xl text-green-900 mb-sm">Email</h3>
             <a href="mailto:DRL400@francis.edu" className="text-lg text-green-800">

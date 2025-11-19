@@ -1,42 +1,42 @@
-/* Professional Portfolio Styles with Golf-Inspired Colors */
+/* Professional Portfolio Styles with Modern Corporate Palette */
 
-/* CSS Variables - Golf-Inspired Color Palette */
+/* CSS Variables - Modern Corporate Color Palette */
 :root {
-  /* Green shades (fairway/putting green) */
-  --green-50: #f0f9f4;
-  --green-100: #dcf2e3;
-  --green-200: #bce4ca;
-  --green-300: #8fcea8;
-  --green-400: #5cb07e;
-  --green-500: #3a8f5f;
-  --green-600: #2a724c;
-  --green-700: #235b3f;
-  --green-800: #1f4a35;
-  --green-900: #1a3d2c;
+  /* Primary slate/navy scale */
+  --green-50: #f6f7fb;
+  --green-100: #e4e8f4;
+  --green-200: #cdd4ea;
+  --green-300: #b0bcde;
+  --green-400: #8ea1d4;
+  --green-500: #5c74bd;
+  --green-600: #3f5697;
+  --green-700: #303f72;
+  --green-800: #262f54;
+  --green-900: #1a223a;
 
-  /* Sky blue */
-  --sky-50: #f0f9ff;
-  --sky-100: #e0f2fe;
-  --sky-200: #bae6fd;
-  --sky-300: #7dd3fc;
-  --sky-400: #38bdf8;
-  --sky-500: #0ea5e9;
-  --sky-600: #0284c7;
-  --sky-700: #0369a1;
-  --sky-800: #075985;
-  --sky-900: #0c4a6e;
+  /* Accent teal */
+  --sky-50: #f2fbfb;
+  --sky-100: #d7f4f4;
+  --sky-200: #ade4e4;
+  --sky-300: #73cfcf;
+  --sky-400: #3bb6b6;
+  --sky-500: #129b9b;
+  --sky-600: #0c7a7a;
+  --sky-700: #0b5d5d;
+  --sky-800: #0a4646;
+  --sky-900: #073333;
 
-  /* Brown/tan (sand trap) */
-  --brown-50: #faf7f2;
-  --brown-100: #f4ede0;
-  --brown-200: #e7d8c0;
-  --brown-300: #d6bc96;
-  --brown-400: #c49a6a;
-  --brown-500: #b5824f;
-  --brown-600: #a66d42;
-  --brown-700: #8a5838;
-  --brown-800: #704833;
-  --brown-900: #5d3c2c;
+  /* Warm neutral accent */
+  --brown-50: #fdf7f3;
+  --brown-100: #f7ebe1;
+  --brown-200: #ecd4bf;
+  --brown-300: #deb492;
+  --brown-400: #cc9364;
+  --brown-500: #b97644;
+  --brown-600: #995c33;
+  --brown-700: #7a4629;
+  --brown-800: #5c3622;
+  --brown-900: #3f2618;
 
   /* Neutral colors */
   --white: #ffffff;
@@ -51,6 +51,14 @@
   --gray-800: #1f2937;
   --gray-900: #111827;
 
+  /* Brand accents */
+  --brand-primary: var(--green-700);
+  --brand-primary-dark: var(--green-800);
+  --brand-primary-light: var(--green-400);
+  --brand-secondary: var(--green-500);
+  --brand-secondary-dark: var(--green-600);
+  --brand-outline: rgba(48, 63, 114, 0.15);
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -58,7 +66,7 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
+  --spacing-3xl: 3.25rem;
 
   /* Typography */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -89,7 +97,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--font-sans);
-  background: linear-gradient(180deg, var(--sky-200) 0%, var(--sky-100) 50%, var(--green-100) 100%);
+  background: linear-gradient(180deg, var(--gray-50) 0%, #f4f6fb 45%, var(--white) 100%);
   background-attachment: fixed;
   color: var(--green-900);
   line-height: 1.6;
@@ -175,6 +183,21 @@ a:hover {
   .grid-cols-lg-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+/* Contact grid adjustments */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+.contact-grid > .card {
+  flex: 1 1 clamp(260px, calc(33% - var(--spacing-lg)), 340px);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Flexbox Utilities */
@@ -391,29 +414,33 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--green-600);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
   color: var(--white);
+  border: 1px solid var(--brand-primary-dark);
+  box-shadow: 0 8px 20px rgba(26, 34, 58, 0.18);
 }
 
 .btn-primary:hover {
-  background-color: var(--green-700);
+  background: var(--brand-primary-dark);
   color: var(--white);
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 12px 24px rgba(26, 34, 58, 0.25);
 }
 
 .btn-secondary {
-  background-color: var(--sky-500);
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--brand-secondary-dark) 100%);
   color: var(--white);
+  border: 1px solid var(--brand-secondary-dark);
+  box-shadow: 0 6px 16px rgba(38, 47, 84, 0.18);
 }
 
 .btn-secondary:hover {
-  background-color: var(--sky-600);
+  background-color: var(--brand-secondary-dark);
   color: var(--white);
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 10px 20px rgba(26, 34, 58, 0.25);
 }
 
 .btn-sm {
@@ -646,7 +673,7 @@ a:hover {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: var(--green-400);
   border-radius: var(--radius-lg);
-  border: 3px solid var(--green-800);
+  border: 2px solid var(--brand-primary-dark);
   margin-bottom: var(--spacing-2xl);
   box-shadow: var(--shadow-lg);
 }
@@ -676,7 +703,7 @@ a:hover {
 
 /* Section */
 .section {
-  margin-bottom: var(--spacing-3xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .section-header {
