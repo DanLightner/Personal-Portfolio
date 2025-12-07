@@ -89,10 +89,39 @@ function Home() {
         </div>
       </section>
 
+      {/* About Preview Section */}
+      <section className="section">
+        <div className="card">
+          <h2 className="text-2xl text-md-3xl mb-lg text-green-900 text-center">About Me</h2>
+          <div className="text-lg text-green-800 space-y-md text-center max-w-3xl mx-auto">
+            <p>
+              I'm a Computer Science student at Saint Francis University with interests in full-stack development, 
+              systems administration, and building practical software solutions. I currently work as an Application Analyst Intern 
+              at Geisinger, where I help manage enterprise analytics tools and automate workflows that support multiple departments. 
+              I've worked with Java, Spring Boot, React, and cloud tools, and I enjoy learning how systems work from both the 
+              software and infrastructure side. I've had experience leading Agile team projects and working with environments like 
+              Active Directory, which has helped me grow as both a developer and a problem-solver.
+            </p>
+            <p>
+              Outside of tech, I stay involved in a few different activities that keep me balanced. I'm really into esports and 
+              enjoy the strategy and teamwork that come with competitive gaming. I also stay active through golf, basketball, 
+              intramural volleyball, and flag football. I even run a <a href="https://danlightner6.wixsite.com/golf-blog" target="_blank" rel="noopener noreferrer" className="text-green-900 font-bold underline hover:text-brown-600">golf blog</a> to track my progress and stay consistent. 
+              All of this helps me bring a better mindset and work ethic into both my personal projects and professional work.
+            </p>
+            <Link 
+              to="/about"
+              className="btn btn-primary inline-block mt-md"
+            >
+              Learn More About Me
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section className="section">
         <div className="card bg-brown-200">
-          <h2 className="text-2xl text-md-3xl mb-xl text-brown-900 text-center">Skills</h2>
+          <h2 className="text-2xl text-md-3xl mb-xl text-brown-900 text-center">Technical Skills</h2>
           <div className="flex flex-wrap justify-center gap-md">
             <span className="badge badge-lg">Java</span>
             <span className="badge badge-lg">Python</span>
@@ -101,7 +130,10 @@ function Home() {
             <span className="badge badge-lg">Spring Boot</span>
             <span className="badge badge-lg">React</span>
             <span className="badge badge-lg">Tableau</span>
+            <span className="badge badge-lg">SAP BusinessObjects</span>
             <span className="badge badge-lg">Git</span>
+            <span className="badge badge-lg">Azure</span>
+            <span className="badge badge-lg">Agile</span>
           </div>
         </div>
       </section>
