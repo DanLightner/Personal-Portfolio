@@ -2,6 +2,7 @@ import profileImage from '../assets/IMG_0761.webp'
 import golfImage from '../assets/golf.jpg'
 import volleyballImage from '../assets/volleyball.png'
 import footballImage from '../assets/foootball.png'
+import leadershipAwardImage from '../assets/leadership award.jpg'
 
 function About() {
   return (
@@ -34,6 +35,12 @@ function About() {
           <p>
             Outside of class and work, I spend a lot of time learning on my own. I like improving my coding habits, writing cleaner and more maintainable code, and understanding best practices like testing and CI/CD at a deeper level. My goal is to continue growing into a well-rounded software engineer who understands both development and systems. I want to work on projects that actually help people and solve real problems, not just build things for the sake of it.
           </p>
+          <p>
+            Recognized with the STEAM Leadership Award for contributions to the School of STEAM community and consistent academic excellence.
+          </p>
+          <div className="my-lg flex justify-center">
+            <img src={leadershipAwardImage} alt="STEAM Leadership Award" className="w-full max-w-2xl mx-auto rounded-lg shadow-md" />
+          </div>
         </div>
       </section>
 
@@ -59,6 +66,10 @@ function About() {
 
           <p>
             I also stay active by playing flag football, basketball, and intramural volleyball. Team sports give me a different type of challenge because they rely on communication, trust, and the ability to adapt quickly to what is happening in real time. Playing with different groups has helped me learn how to read situations, communicate clearly, and keep everyone on the same page even when things get chaotic. These experiences translate directly into how I work on development teams because I am used to helping others, taking feedback, and keeping a positive attitude when a project hits a rough patch. Sports remind me that individual effort matters but real success always depends on the group moving together.
+          </p>
+
+          <p>
+            I’m also part of the campus Frisbee club, where we play ultimate and keep the competitive spirit going.
           </p>
 
           <div className="my-lg flex justify-center">

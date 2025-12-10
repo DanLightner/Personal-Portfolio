@@ -167,8 +167,12 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Web Application</span>
+              <div className="w-full h-full rounded-lg bg-gradient-to-r from-green-200 via-emerald-300 to-green-300 border border-green-300 shadow-sm flex flex-col items-center justify-center text-center p-md gap-sm">
+                <div className="text-3xl">🎵</div>
+                <div className="text-green-900 font-bold text-lg">Statify</div>
+                <div className="text-green-800 text-sm">
+                  OAuth 2.0 login · Spotify Web API · Playlists & profile data
+                </div>
               </div>
             </div>
             

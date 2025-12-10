@@ -43,7 +43,14 @@ function Contact() {
       {/* Contact Form */}
       <section className="card max-w-2xl mx-auto">
         <h2 className="text-2xl text-md-3xl mb-xl text-green-900 text-center">Send a Message</h2>
-        <form className="space-y-lg">
+        <form
+          className="space-y-lg"
+          action="https://formsubmit.co/DRL400@francis.edu"
+          method="POST"
+        >
+          {/* FormSubmit helpers */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="Portfolio contact form" />
           <div className="form-group">
             <label htmlFor="name" className="form-label">
               Name
@@ -54,6 +61,7 @@ function Contact() {
               name="name"
               placeholder="Your Name"
               className="form-input"
+              required
             />
           </div>
           <div className="form-group">
@@ -66,6 +74,7 @@ function Contact() {
               name="email"
               placeholder="your.email@example.com"
               className="form-input"
+              required
             />
           </div>
           <div className="form-group">
@@ -78,6 +87,7 @@ function Contact() {
               name="subject"
               placeholder="Subject"
               className="form-input"
+              required
             />
           </div>
           <div className="form-group">
@@ -90,6 +100,7 @@ function Contact() {
               rows="6"
               placeholder="Your message here..."
               className="form-textarea"
+              required
             />
           </div>
           <button 
