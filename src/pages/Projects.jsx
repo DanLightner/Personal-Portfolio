@@ -1,3 +1,9 @@
+import paProjectImage from '../assets/paprojectscreenshot.png'
+import basketballImage from '../assets/collegebasketball.png'
+import windowsServerImage from '../assets/windows server.png'
+import bankingAppImage from '../assets/banking app.png'
+import draynorManorImage from '../assets/draynormanorgame.png'
+
 function Projects() {
   return (
     <div className="space-y-3xl">
@@ -14,9 +20,7 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Desktop Application</span>
-              </div>
+              <img src={paProjectImage} alt="SFU PA Program Screenshot" className="w-full h-auto rounded-lg" />
             </div>
             
             {/* Content Section */}
@@ -60,9 +64,7 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Data Analysis Project</span>
-              </div>
+              <img src={basketballImage} alt="College Basketball EDA Visualization" className="w-full h-auto rounded-lg" />
             </div>
             
             {/* Content Section */}
@@ -96,9 +98,7 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Infrastructure & Systems</span>
-              </div>
+              <img src={windowsServerImage} alt="Windows Server & Active Directory Lab" className="w-full h-auto rounded-lg" />
             </div>
             
             {/* Content Section */}
@@ -133,9 +133,7 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Web Application</span>
-              </div>
+              <img src={bankingAppImage} alt="Banking App Screenshot" className="w-full h-auto rounded-lg" />
             </div>
             
             {/* Content Section */}
@@ -206,9 +204,7 @@ function Projects() {
           <div className="project-card">
             {/* Media Section */}
             <div className="project-media">
-              <div className="text-center">
-                <span className="text-green-800 text-lg">Desktop Application</span>
-              </div>
+              <img src={draynorManorImage} alt="Draynor Manor Game Screenshot" className="w-full h-auto rounded-lg" />
             </div>
             
             {/* Content Section */}
