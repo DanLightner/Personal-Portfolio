@@ -45,7 +45,7 @@ function Contact() {
         <h2 className="text-2xl text-md-3xl mb-xl text-green-900 text-center">Send a Message</h2>
         <form
           className="space-y-lg"
-          action="https://formsubmit.co/DRL400@francis.edu"
+          action="https://formsubmit.co/7574742921987039878d4dadfce963d1"
           method="POST"
         >
           {/* FormSubmit helpers */}
